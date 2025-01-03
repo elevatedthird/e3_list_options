@@ -6,18 +6,19 @@ use Drupal\list_predefined_options\Plugin\ListOptionsBase;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\list_predefined_options\Annotation\ListOptions;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
  * Provides a list of Colors.
- *
- * @ListOptions(
- *   id = "colors",
- *   label = @Translation("Colors"),
- *   field_types = {
- *     "list_string",
- *   },
- * )
  */
+#[ListOptions(
+  id: "colors",
+  label: new TranslatableMarkup("Colors"),
+  field_types: [
+    "list_string",
+  ],
+)]
 class Colors extends ListOptionsBase {
 
   use StringTranslationTrait;

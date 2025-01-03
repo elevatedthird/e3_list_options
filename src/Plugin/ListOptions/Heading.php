@@ -6,18 +6,19 @@ use Drupal\list_predefined_options\Plugin\ListOptionsBase;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\list_predefined_options\Annotation\ListOptions;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
  * Provides a list of Headings.
- *
- * @ListOptions(
- *   id = "headings",
- *   label = @Translation("Headings"),
- *   field_types = {
- *     "list_string",
- *   },
- * )
  */
+#[ListOptions(
+  id: "headings",
+  label: new TranslatableMarkup("Headings"),
+  field_types: [
+    "list_string",
+  ],
+)]
 class Heading extends ListOptionsBase {
 
   use StringTranslationTrait;
