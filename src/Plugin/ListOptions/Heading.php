@@ -6,7 +6,7 @@ use Drupal\list_predefined_options\Plugin\ListOptionsBase;
 use Drupal\Core\Entity\FieldableEntityInterface;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
-use Drupal\list_predefined_options\Annotation\ListOptions;
+use Drupal\list_predefined_options\Attribute\ListOptions;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 
 /**
