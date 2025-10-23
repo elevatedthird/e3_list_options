@@ -1,3 +1,5 @@
+# This module is now in paragon_base as paragon_list_options
+
 # E3 List options
 
 A module containing plugins for creating select lists. It depends on [List Predifined Options](https://www.drupal.org/project/list_predefined_options)
